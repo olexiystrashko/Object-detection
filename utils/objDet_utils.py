@@ -39,7 +39,7 @@ def detect_objects(image_np, sess, detection_graph):
         [boxes, scores, classes, num_detections],
         feed_dict={image_tensor: image_np_expanded})
 
-    print("Detected: {}, {}, {}, {}".format(boxes, scores, classes, num_detections))
+    # print("Detected: {}, {}, {}, {}".format(boxes, scores, classes, num_detections))
     # Visualization of the results of a detection.
     vis_util.visualize_boxes_and_labels_on_image_array(
         image_np,
