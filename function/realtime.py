@@ -46,6 +46,8 @@ def realtime(args):
         print()
         
     countFrame = 0
+    if args["display"]:
+        cv2.namedWindow('frame', cv2.WINDOW_NORMAL)
     while True:
         # Capture frame-by-frame
         ret, frame = vs.read()
