@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 xhost +local:docker
 XSOCK=/tmp/.X11-unix
 XAUTH=/tmp/.docker.xauth
